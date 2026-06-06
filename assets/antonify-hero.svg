@@ -1,0 +1,86 @@
+<svg width="1400" height="520" viewBox="0 0 1400 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Antonify README hero banner</title>
+  <desc id="desc">A professional hero banner for Antonify showing the flow from intent to reliable system instructions.</desc>
+
+  <rect width="1400" height="520" rx="34" fill="#080B12"/>
+  <rect x="1" y="1" width="1398" height="518" rx="33" stroke="#263244" stroke-width="2"/>
+
+  <circle cx="1160" cy="70" r="280" fill="#1D4ED8" opacity="0.18"/>
+  <circle cx="270" cy="510" r="300" fill="#14B8A6" opacity="0.12"/>
+  <circle cx="900" cy="430" r="210" fill="#F97316" opacity="0.10"/>
+
+  <g opacity="0.35">
+    <path d="M84 418H1318" stroke="#334155" stroke-width="1"/>
+    <path d="M84 362H1318" stroke="#334155" stroke-width="1"/>
+    <path d="M84 306H1318" stroke="#334155" stroke-width="1"/>
+    <path d="M84 250H1318" stroke="#334155" stroke-width="1"/>
+  </g>
+
+  <rect x="74" y="66" width="158" height="38" rx="19" fill="#111827" stroke="#38BDF8" stroke-width="1.5"/>
+  <circle cx="100" cy="85" r="7" fill="#38BDF8"/>
+  <text x="118" y="91" fill="#BAE6FD" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">SYSTEM KIT</text>
+
+  <text x="74" y="172" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="68" font-weight="850">Antonify</text>
+  <text x="78" y="218" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="500">Create system instructions that give AI agents direction, structure, and taste.</text>
+  <text x="78" y="256" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18">Role. Input. Rules. Output. Validation. Examples. One clean operating brief.</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="78" y="316" width="176" height="74" rx="18" fill="#0F172A" stroke="#38BDF8" stroke-width="1.5"/>
+    <text x="106" y="348" fill="#E0F2FE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="800">Intent</text>
+    <text x="106" y="371" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">what it must do</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="292" y="316" width="176" height="74" rx="18" fill="#0F172A" stroke="#34D399" stroke-width="1.5"/>
+    <text x="320" y="348" fill="#DCFCE7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="800">Contract</text>
+    <text x="320" y="371" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">input and output</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="506" y="316" width="176" height="74" rx="18" fill="#0F172A" stroke="#FBBF24" stroke-width="1.5"/>
+    <text x="534" y="348" fill="#FEF3C7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="800">Rules</text>
+    <text x="534" y="371" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">preserve, change, ban</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="720" y="316" width="176" height="74" rx="18" fill="#0F172A" stroke="#C084FC" stroke-width="1.5"/>
+    <text x="748" y="348" fill="#F3E8FF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="800">Validation</text>
+    <text x="748" y="371" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">silent checks</text>
+  </g>
+
+  <path d="M254 353H292" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M468 353H506" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M682 353H720" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+
+  <g filter="url(#panelShadow)">
+    <rect x="970" y="78" width="330" height="332" rx="24" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+    <rect x="996" y="104" width="106" height="34" rx="17" fill="#172554" stroke="#60A5FA" stroke-width="1"/>
+    <text x="1021" y="126" fill="#DBEAFE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="800">GUIDES</text>
+
+    <text x="996" y="178" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="800">Prompting Systems</text>
+    <text x="996" y="208" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">Practical docs and templates for</text>
+    <text x="996" y="231" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">agents that need reliable behavior.</text>
+
+    <rect x="996" y="270" width="252" height="38" rx="12" fill="#111827" stroke="#1E293B"/>
+    <circle cx="1018" cy="289" r="5" fill="#38BDF8"/>
+    <text x="1034" y="294" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="650">Video prompting</text>
+
+    <rect x="996" y="318" width="252" height="38" rx="12" fill="#111827" stroke="#1E293B"/>
+    <circle cx="1018" cy="337" r="5" fill="#A78BFA"/>
+    <text x="1034" y="342" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="650">Image prompting</text>
+
+    <rect x="996" y="366" width="252" height="38" rx="12" fill="#111827" stroke="#1E293B"/>
+    <circle cx="1018" cy="385" r="5" fill="#FBBF24"/>
+    <text x="1034" y="390" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="650">General instruction design</text>
+  </g>
+
+  <defs>
+    <filter id="softShadow" x="40" y="280" width="900" height="130" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+    <filter id="panelShadow" x="930" y="42" width="394" height="392" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+</svg>
+

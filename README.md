@@ -1,3 +1,5 @@
+![Antonify hero banner](assets/antonify-hero.svg)
+
 # Antonify
 
 Antonify is a practical kit for creating strong system instructions for AI agents.
