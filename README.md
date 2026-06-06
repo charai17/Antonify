@@ -2,11 +2,95 @@
 
 # Antonify
 
-Antonify is a practical kit for creating, improving, and generalizing system instructions for any kind of AI agent.
+Antonify is a practical kit for creating, improving, and generalizing system instructions for AI agents, with extra image and video prompting guides.
 
 The goal is simple: turn messy intent into instructions that give an AI model clear direction, reliable output shape, and enough judgment to do the job without drifting.
 
 Video and image prompt guides are included as specialized extras, but the core of Antonify is generalized instruction design.
+
+Star this repo if you want a reusable system-instruction kit for AI agents.
+
+## Start Here: Copy The Universal Instruction Template
+
+Use this when you want an AI agent to turn a rough idea into a clear, reusable system instruction.
+
+```text
+You are an Antonify system-instruction architect.
+
+Your job is to turn a rough agent idea into a clear, reusable system instruction.
+
+First, infer:
+- the agent's job
+- the input fields the user should provide
+- whether the output needs a strict schema or a simple response pattern
+
+Then produce:
+1. the finished system instruction
+2. the draft input schema
+3. the draft output schema or response pattern
+4. two example outputs:
+   - Example A: normal realistic input
+   - Example B: vague, missing-field, or edge-case input
+
+Ask the user what feels wrong, missing, too strict, or too loose.
+Revise until the instruction is clear, testable, and easy to reuse.
+```
+
+## Use Antonify In 5 Minutes
+
+1. Copy the universal template above into Claude, ChatGPT, Codex, Claude Code, OpenClaw, Hermes Agent, or another agent tool.
+2. Paste a rough request, for example: `Create an agent that turns messy client notes into project briefs.`
+3. Let Antonify draft the job, input schema, output shape, rules, and validation checklist.
+4. Compare the two example outputs it gives you.
+5. Tell it what feels wrong, missing, too strict, or too loose.
+6. Reuse the final instruction as your agent's system instruction, master prompt, or skill behavior.
+
+## Before And After
+
+Before:
+
+```text
+Make an agent that turns client notes into a project brief.
+```
+
+After:
+
+```text
+You are a project-brief architect.
+
+Your job is to receive messy client notes and produce a clear project brief.
+
+You receive:
+- raw client notes
+- optional business context
+- optional constraints, deadline, budget, or audience
+
+Return:
+- project summary
+- goals
+- scope
+- deliverables
+- open questions
+- risks or missing information
+
+Do not invent facts, budgets, deadlines, tools, or stakeholder promises.
+If information is missing, put it in open questions instead of guessing.
+```
+
+## Pick A Guide
+
+- Start with [general system instructions](docs/general-prompting.md) for any AI agent.
+- Use [image prompting](docs/image-prompting.md) for image-generation or image-editing agents.
+- Use [video prompting](docs/video-prompting.md) for video-generation agents.
+- Use [Agent Skill integration](docs/agent-skill-integration.md) to install Antonify in Claude Code, Codex, OpenClaw, Hermes Agent, and similar tools.
+
+## Who This Is For
+
+- builders creating AI agents, assistants, workflows, and skill folders
+- prompt engineers turning rough ideas into reusable system instructions
+- developers who need predictable JSON, table, or structured output
+- creators writing image-generation or video-generation prompt agents
+- teams that want instructions to be testable instead of vibes-only
 
 ## What Antonify Helps You Build
 
@@ -108,28 +192,6 @@ See [docs/agent-skill-integration.md](docs/agent-skill-integration.md) for full 
 - [skills/antonify-instruction-architect/SKILL.md](skills/antonify-instruction-architect/SKILL.md): starter portable Agent Skill for applying Antonify in agent tools
 - [skills/antonify-skill-integrator/SKILL.md](skills/antonify-skill-integrator/SKILL.md): starter Agent Skill for installing and adapting Antonify across agent platforms
 
-## Quick Start
-
-Start with a plain-language request. Antonify should do the structure work for you.
-
-1. Tell Antonify what the agent should do.
-2. Antonify drafts the agent's job, input schema, and output shape.
-3. If the agent needs JSON, tables, or structured data, Antonify creates a strict output schema.
-4. If the agent is a system instruction or master prompt without a formal schema, Antonify creates a simple response pattern instead.
-5. Antonify adds preservation rules, transformation rules, quality rules, and a silent validation checklist.
-6. Antonify returns the finished instruction.
-7. Antonify also runs a quick test by showing two example outputs or two candidate output shapes.
-8. You reply with what feels wrong, missing, too strict, or too loose.
-9. Antonify revises the instruction and repeats the two-example test.
-
-Example request:
-
-```text
-Create a system instruction for an agent that turns messy client notes into a clear project brief.
-```
-
-Antonify should infer the input fields, propose the output shape, and show two sample results so you can react before the instruction is treated as finished.
-
 ## The Antonify Rule
 
 If the model can fail by guessing, the instruction should remove the guess.
@@ -172,6 +234,20 @@ Use Antonify when you want instructions that are:
 - testable enough to improve over time
 
 The same architecture works for general agents, JSON agents, image prompt agents, and video prompt agents.
+
+## Share Useful Examples
+
+When sharing Antonify, show a small before/after instead of only saying the repo exists.
+
+Useful post shape:
+
+```text
+Before: Make an agent that improves prompts.
+
+After: Role, job, input fields, output shape, anti-invention rules, validation checklist, and two test examples.
+```
+
+Short examples are easier to understand, easier to share, and more likely to help someone star the repo because they can see the practical use immediately.
 
 ## Copy Paste Install
 
