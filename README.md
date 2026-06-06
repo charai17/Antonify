@@ -52,7 +52,7 @@ Use that when you want an agent to install Antonify into another tool, adapt the
 
 Quick install map:
 
-<img src="assets/claude-code-logo.svg" alt="Claude Code logo" width="90">
+<img src="assets/claude-code-logo.svg" alt="Claude Code logo" width="220">
 
 **Claude Code**
 
