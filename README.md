@@ -31,6 +31,43 @@ Good system instructions are not long because they are fancy. They are complete 
 - What does a good result look like?
 - How do I silently validate before answering?
 
+## Use Antonify As Agent Skills
+
+Antonify can be installed as a reusable Agent Skill in tools that read `SKILL.md` folders.
+
+This repo includes a starter skill:
+
+```text
+skills/antonify-instruction-architect/SKILL.md
+```
+
+Use it when you want Claude Code, Codex, OpenClaw, Hermes Agent, or a similar agent to create, rewrite, or audit system instructions with the Antonify method.
+
+It also includes an integration skill:
+
+```text
+skills/antonify-skill-integrator/SKILL.md
+```
+
+Use that when you want an agent to install Antonify into another tool, adapt the folder structure, write platform-specific setup notes, or verify skill discovery paths.
+
+| Claude Code | Codex |
+| :---: | :---: |
+| ![Claude Code Antonify skill card](assets/claude-code-skill.svg) | ![Codex Antonify skill card](assets/codex-skill.svg) |
+
+| OpenClaw | Hermes Agent |
+| :---: | :---: |
+| ![OpenClaw Antonify skill card](assets/openclaw-skill.svg) | ![Hermes Agent Antonify skill card](assets/hermes-agent-skill.svg) |
+
+Quick install map:
+
+- Claude Code: copy the starter skill into `.claude/skills` or `~/.claude/skills`
+- Codex: copy the starter skill into `.agents/skills` or `~/.agents/skills`
+- OpenClaw: keep it in a workspace `skills/` folder or copy it into `~/.openclaw/skills`
+- Hermes Agent: copy it into `~/.hermes/skills` or add this repo's `skills/` path to `skills.external_dirs`
+
+See [docs/agent-skill-integration.md](docs/agent-skill-integration.md) for full install commands, test prompts, and platform notes.
+
 ## Repository Map
 
 - [docs/principles.md](docs/principles.md): the Antonify instruction-writing principles
@@ -40,6 +77,7 @@ Good system instructions are not long because they are fancy. They are complete 
 - [docs/image-prompting.md](docs/image-prompting.md): direct image-generation and image-editing prompt guide
 - [docs/seedance-video-prompting.md](docs/seedance-video-prompting.md): Seedance-style video prompt logic
 - [docs/validation.md](docs/validation.md): how to test instructions before shipping them
+- [docs/agent-skill-integration.md](docs/agent-skill-integration.md): how to install Antonify as Agent Skills in Claude Code, Codex, OpenClaw, Hermes Agent, and similar tools
 - [templates/system-instruction-template.md](templates/system-instruction-template.md): general-purpose system instruction template
 - [templates/json-output-agent-template.md](templates/json-output-agent-template.md): strict JSON agent template
 - [templates/general-prompt-system-instruction.md](templates/general-prompt-system-instruction.md): generalized prompt architect instruction
@@ -49,6 +87,8 @@ Good system instructions are not long because they are fancy. They are complete 
 - [examples/system-instruction-editor.md](examples/system-instruction-editor.md): general instruction editing example
 - [examples/video-prompt-agent.md](examples/video-prompt-agent.md): video prompt agent example
 - [examples/image-prompt-agent.md](examples/image-prompt-agent.md): image prompt agent example
+- [skills/antonify-instruction-architect/SKILL.md](skills/antonify-instruction-architect/SKILL.md): starter portable Agent Skill for applying Antonify in agent tools
+- [skills/antonify-skill-integrator/SKILL.md](skills/antonify-skill-integrator/SKILL.md): starter Agent Skill for installing and adapting Antonify across agent platforms
 
 ## Quick Start
 

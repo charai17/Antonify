@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="320" viewBox="0 0 560 320" role="img" aria-labelledby="title desc">
+  <title id="title">OpenClaw Antonify skill card</title>
+  <desc id="desc">A visual card showing Antonify as an OpenClaw skill.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#eef2ff"/>
+      <stop offset="1" stop-color="#9ba9ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="560" height="320" rx="28" fill="url(#bg)"/>
+  <rect x="24" y="24" width="512" height="272" rx="22" fill="#fbfcff" stroke="#3b47a3" stroke-opacity=".25"/>
+  <circle cx="98" cy="94" r="46" fill="#263184"/>
+  <path d="M74 98c10-28 29-43 56-44-18 12-27 28-27 47 0 12 3 22 9 31-22-4-35-16-38-34Zm41 1c0-20 9-35 27-45 1 25-5 46-18 62-6-3-9-9-9-17Z" fill="#eef2ff"/>
+  <text x="156" y="82" fill="#171c51" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">OpenClaw</text>
+  <text x="156" y="118" fill="#424b8e" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18">Antonify as a workspace or global skill</text>
+  <rect x="60" y="170" width="440" height="54" rx="14" fill="#171c51"/>
+  <text x="84" y="204" fill="#fbfcff" font-family="Consolas, Monaco, monospace" font-size="20">skills/antonify-instruction-architect</text>
+  <text x="60" y="260" fill="#424b8e" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Check</text>
+  <text x="125" y="260" fill="#171c51" font-family="Consolas, Monaco, monospace" font-size="20">openclaw skills list</text>
+</svg>
