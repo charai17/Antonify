@@ -213,3 +213,41 @@ The output should have a clear job, exact input contract, exact output contract,
 - [Codex Agent Skills](https://developers.openai.com/codex/skills)
 - [OpenClaw skills](https://openclawlab.com/en/docs/agent/skills/)
 - [Hermes Agent skills](https://hermes-agent.nousresearch.com/docs/user-guide/features/skills)
+
+## Copy Paste Install
+
+Run one of these from a local Antonify checkout.
+
+Claude Code project skills:
+
+```bash
+mkdir -p .claude/skills
+cp -R skills/antonify-instruction-architect .claude/skills/
+cp -R skills/antonify-skill-integrator .claude/skills/
+```
+
+Codex repo skills:
+
+```bash
+mkdir -p .agents/skills
+cp -R skills/antonify-instruction-architect .agents/skills/
+cp -R skills/antonify-skill-integrator .agents/skills/
+```
+
+OpenClaw global skills:
+
+```bash
+mkdir -p ~/.openclaw/skills
+cp -R skills/antonify-instruction-architect ~/.openclaw/skills/
+cp -R skills/antonify-skill-integrator ~/.openclaw/skills/
+openclaw skills list
+```
+
+Hermes Agent local skills:
+
+```bash
+mkdir -p ~/.hermes/skills
+cp -R skills/antonify-instruction-architect ~/.hermes/skills/
+cp -R skills/antonify-skill-integrator ~/.hermes/skills/
+hermes chat -s antonify-instruction-architect -q "Create a system instruction for a strict JSON-output agent."
+```

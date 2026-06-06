@@ -51,20 +51,39 @@ skills/antonify-skill-integrator/SKILL.md
 
 Use that when you want an agent to install Antonify into another tool, adapt the folder structure, write platform-specific setup notes, or verify skill discovery paths.
 
-| Claude Code | Codex |
-| :---: | :---: |
-| ![Claude Code Antonify skill card](assets/claude-code-skill.svg) | ![Codex Antonify skill card](assets/codex-skill.svg) |
-
-| OpenClaw | Hermes Agent |
-| :---: | :---: |
-| ![OpenClaw Antonify skill card](assets/openclaw-skill.svg) | ![Hermes Agent Antonify skill card](assets/hermes-agent-skill.svg) |
-
 Quick install map:
 
-- Claude Code: copy the starter skill into `.claude/skills` or `~/.claude/skills`
-- Codex: copy the starter skill into `.agents/skills` or `~/.agents/skills`
-- OpenClaw: keep it in a workspace `skills/` folder or copy it into `~/.openclaw/skills`
-- Hermes Agent: copy it into `~/.hermes/skills` or add this repo's `skills/` path to `skills.external_dirs`
+<img src="assets/claude-code-logo.svg" alt="Claude Code logo" width="90">
+
+**Claude Code**
+
+Install: copy the starter skill into `.claude/skills` or `~/.claude/skills`.
+
+Use: `/antonify-instruction-architect`
+
+<img src="assets/codex-skills-preview.png" alt="Codex Agent Skills preview" width="160">
+
+**Codex**
+
+Install: copy the starter skill into `.agents/skills` or `~/.agents/skills`.
+
+Use: `$antonify-instruction-architect`
+
+<img src="assets/openclaw-logo.svg" alt="OpenClaw logo" width="64">
+
+**OpenClaw**
+
+Install: keep it in a workspace `skills/` folder or copy it into `~/.openclaw/skills`.
+
+Check: `openclaw skills list`
+
+<img src="assets/hermes-agent-logo.png" alt="Hermes Agent logo" width="64">
+
+**Hermes Agent**
+
+Install: copy it into `~/.hermes/skills` or add this repo's `skills/` path to `skills.external_dirs`.
+
+Use: `/antonify-instruction-architect`
 
 See [docs/agent-skill-integration.md](docs/agent-skill-integration.md) for full install commands, test prompts, and platform notes.
 
@@ -145,3 +164,41 @@ Use Antonify when you want instructions that are:
 - testable enough to improve over time
 
 The same architecture works for general agents, JSON agents, image prompt agents, and video prompt agents.
+
+## Copy Paste Install
+
+From a local Antonify checkout, copy both included skills into the platform you use.
+
+Claude Code project skills:
+
+```bash
+mkdir -p .claude/skills
+cp -R skills/antonify-instruction-architect .claude/skills/
+cp -R skills/antonify-skill-integrator .claude/skills/
+```
+
+Codex repo skills:
+
+```bash
+mkdir -p .agents/skills
+cp -R skills/antonify-instruction-architect .agents/skills/
+cp -R skills/antonify-skill-integrator .agents/skills/
+```
+
+OpenClaw global skills:
+
+```bash
+mkdir -p ~/.openclaw/skills
+cp -R skills/antonify-instruction-architect ~/.openclaw/skills/
+cp -R skills/antonify-skill-integrator ~/.openclaw/skills/
+openclaw skills list
+```
+
+Hermes Agent local skills:
+
+```bash
+mkdir -p ~/.hermes/skills
+cp -R skills/antonify-instruction-architect ~/.hermes/skills/
+cp -R skills/antonify-skill-integrator ~/.hermes/skills/
+hermes chat -s antonify-instruction-architect -q "Create a system instruction for a strict JSON-output agent."
+```
