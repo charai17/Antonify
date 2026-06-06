@@ -50,17 +50,17 @@
   <path d="M898 298C898 350 790 382 720 398" stroke="#64748B" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 10"/>
   <path d="M334 380C286 350 220 320 166 298" stroke="#64748B" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 10"/>
 
-  <rect x="72" y="574" width="300" height="86" rx="16" fill="#0B1220" stroke="#38BDF8" stroke-width="1.5"/>
-  <text x="102" y="610" fill="#E0F2FE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Video Prompting</text>
-  <text x="102" y="638" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Subject, action, camera, sound, constraints</text>
+  <rect x="72" y="574" width="300" height="86" rx="16" fill="#0B1220" stroke="#FBBF24" stroke-width="1.5"/>
+  <text x="102" y="610" fill="#FEF3C7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">General Prompting</text>
+  <text x="102" y="638" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Role, job, contract, rules, validation</text>
 
-  <rect x="424" y="574" width="300" height="86" rx="16" fill="#0B1220" stroke="#A78BFA" stroke-width="1.5"/>
-  <text x="454" y="610" fill="#F3E8FF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Image Prompting</text>
-  <text x="454" y="638" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Subject, composition, lighting, style, edits</text>
+  <rect x="424" y="574" width="300" height="86" rx="16" fill="#0B1220" stroke="#38BDF8" stroke-width="1.5"/>
+  <text x="454" y="610" fill="#E0F2FE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Video Prompting</text>
+  <text x="454" y="638" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Subject, action, camera, sound, constraints</text>
 
-  <rect x="776" y="574" width="300" height="86" rx="16" fill="#0B1220" stroke="#FBBF24" stroke-width="1.5"/>
-  <text x="806" y="610" fill="#FEF3C7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">General Prompting</text>
-  <text x="806" y="638" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Role, job, contract, rules, validation</text>
+  <rect x="776" y="574" width="300" height="86" rx="16" fill="#0B1220" stroke="#A78BFA" stroke-width="1.5"/>
+  <text x="806" y="610" fill="#F3E8FF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Image Prompting</text>
+  <text x="806" y="638" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Subject, composition, lighting, style, edits</text>
 
   <defs>
     <filter id="shadow" x="0" y="0" width="1200" height="760" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -68,4 +68,3 @@
     </filter>
   </defs>
 </svg>
-

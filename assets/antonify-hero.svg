@@ -21,8 +21,8 @@
   <text x="118" y="91" fill="#BAE6FD" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">SYSTEM KIT</text>
 
   <text x="74" y="172" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="68" font-weight="850">Antonify</text>
-  <text x="78" y="218" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="500">Create system instructions that give AI agents direction, structure, and taste.</text>
-  <text x="78" y="256" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18">Role. Input. Rules. Output. Validation. Examples. One clean operating brief.</text>
+  <text x="78" y="218" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="500">Create and generalize instructions for any kind of AI agent.</text>
+  <text x="78" y="256" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18">General systems first. Video and image prompts as optional extras.</text>
 
   <g filter="url(#softShadow)">
     <rect x="78" y="316" width="176" height="74" rx="18" fill="#0F172A" stroke="#38BDF8" stroke-width="1.5"/>
@@ -57,21 +57,21 @@
     <rect x="996" y="104" width="106" height="34" rx="17" fill="#172554" stroke="#60A5FA" stroke-width="1"/>
     <text x="1021" y="126" fill="#DBEAFE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="800">GUIDES</text>
 
-    <text x="996" y="178" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="800">Prompting Systems</text>
-    <text x="996" y="208" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">Practical docs and templates for</text>
-    <text x="996" y="231" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">agents that need reliable behavior.</text>
+    <text x="996" y="178" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="800">Instruction Systems</text>
+    <text x="996" y="208" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">Create clear instructions for</text>
+    <text x="996" y="231" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">any agent, workflow, or output.</text>
 
     <rect x="996" y="270" width="252" height="38" rx="12" fill="#111827" stroke="#1E293B"/>
-    <circle cx="1018" cy="289" r="5" fill="#38BDF8"/>
-    <text x="1034" y="294" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="650">Video prompting</text>
+    <circle cx="1018" cy="289" r="5" fill="#FBBF24"/>
+    <text x="1034" y="294" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="650">General instruction design</text>
 
     <rect x="996" y="318" width="252" height="38" rx="12" fill="#111827" stroke="#1E293B"/>
-    <circle cx="1018" cy="337" r="5" fill="#A78BFA"/>
-    <text x="1034" y="342" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="650">Image prompting</text>
+    <circle cx="1018" cy="337" r="5" fill="#38BDF8"/>
+    <text x="1034" y="342" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="650">Video prompting extras</text>
 
     <rect x="996" y="366" width="252" height="38" rx="12" fill="#111827" stroke="#1E293B"/>
-    <circle cx="1018" cy="385" r="5" fill="#FBBF24"/>
-    <text x="1034" y="390" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="650">General instruction design</text>
+    <circle cx="1018" cy="385" r="5" fill="#A78BFA"/>
+    <text x="1034" y="390" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="650">Image prompting extras</text>
   </g>
 
   <defs>
@@ -83,4 +83,3 @@
     </filter>
   </defs>
 </svg>
-

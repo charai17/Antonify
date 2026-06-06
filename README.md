@@ -2,18 +2,21 @@
 
 # Antonify
 
-Antonify is a practical kit for creating strong system instructions for AI agents.
+Antonify is a practical kit for creating, improving, and generalizing system instructions for any kind of AI agent.
 
 The goal is simple: turn messy intent into instructions that give an AI model clear direction, reliable output shape, and enough judgment to do the job without drifting.
 
+Video and image prompt guides are included as specialized extras, but the core of Antonify is generalized instruction design.
+
 ## What Antonify Helps You Build
 
-- System instructions for JSON-output agents
-- Workflow agents with role-specific behavior
 - General instruction editors and prompt architects
-- Video-generation prompt agents
-- Image-generation and image-editing prompt agents
+- System instructions for any type of AI agent
+- JSON-output agents
+- Workflow agents with role-specific behavior
 - Validation checklists for testing whether an instruction actually works
+- Extra video-generation prompt agents
+- Extra image-generation and image-editing prompt agents
 
 ## Core Idea
 
