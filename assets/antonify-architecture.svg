@@ -1,0 +1,71 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Antonify System Instruction Architecture</title>
+  <desc id="desc">A professional diagram showing how Antonify turns intent into reliable system instructions through input contracts, rules, output contracts, validation, and examples.</desc>
+  <rect width="1200" height="760" rx="28" fill="#0F172A"/>
+  <rect x="36" y="36" width="1128" height="688" rx="24" fill="#111827" stroke="#334155" stroke-width="2"/>
+
+  <text x="72" y="98" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="42" font-weight="800">Antonify</text>
+  <text x="72" y="134" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18">System instructions that turn intent into reliable agent behavior.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="72" y="182" width="188" height="116" rx="18" fill="#1E293B" stroke="#60A5FA" stroke-width="2"/>
+    <text x="104" y="230" fill="#E0F2FE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Intent</text>
+    <text x="104" y="260" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">Role and job</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="316" y="182" width="188" height="116" rx="18" fill="#1E293B" stroke="#34D399" stroke-width="2"/>
+    <text x="348" y="230" fill="#DCFCE7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Input</text>
+    <text x="348" y="260" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">Fields and context</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="560" y="182" width="188" height="116" rx="18" fill="#1E293B" stroke="#FBBF24" stroke-width="2"/>
+    <text x="592" y="230" fill="#FEF3C7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Rules</text>
+    <text x="592" y="260" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">Preserve, change, ban</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="804" y="182" width="188" height="116" rx="18" fill="#1E293B" stroke="#C084FC" stroke-width="2"/>
+    <text x="836" y="230" fill="#F3E8FF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Output</text>
+    <text x="836" y="260" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">Format and schema</text>
+  </g>
+
+  <path d="M260 240H316" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M504 240H560" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M748 240H804" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+
+  <g filter="url(#shadow)">
+    <rect x="194" y="380" width="280" height="122" rx="18" fill="#172554" stroke="#60A5FA" stroke-width="2"/>
+    <text x="232" y="428" fill="#DBEAFE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Validation</text>
+    <text x="232" y="460" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">Silent checks before the answer</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="526" y="380" width="280" height="122" rx="18" fill="#14532D" stroke="#34D399" stroke-width="2"/>
+    <text x="564" y="428" fill="#DCFCE7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Examples</text>
+    <text x="564" y="460" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">Concrete outputs that teach shape</text>
+  </g>
+
+  <path d="M898 298C898 350 790 382 720 398" stroke="#64748B" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 10"/>
+  <path d="M334 380C286 350 220 320 166 298" stroke="#64748B" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 10"/>
+
+  <rect x="72" y="574" width="300" height="86" rx="16" fill="#0B1220" stroke="#38BDF8" stroke-width="1.5"/>
+  <text x="102" y="610" fill="#E0F2FE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Video Prompting</text>
+  <text x="102" y="638" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Subject, action, camera, sound, constraints</text>
+
+  <rect x="424" y="574" width="300" height="86" rx="16" fill="#0B1220" stroke="#A78BFA" stroke-width="1.5"/>
+  <text x="454" y="610" fill="#F3E8FF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Image Prompting</text>
+  <text x="454" y="638" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Subject, composition, lighting, style, edits</text>
+
+  <rect x="776" y="574" width="300" height="86" rx="16" fill="#0B1220" stroke="#FBBF24" stroke-width="1.5"/>
+  <text x="806" y="610" fill="#FEF3C7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">General Prompting</text>
+  <text x="806" y="638" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Role, job, contract, rules, validation</text>
+
+  <defs>
+    <filter id="shadow" x="0" y="0" width="1200" height="760" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+</svg>
+

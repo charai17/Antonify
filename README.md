@@ -30,10 +30,16 @@ Good system instructions are not long because they are fancy. They are complete 
 
 - [docs/principles.md](docs/principles.md): the Antonify instruction-writing principles
 - [docs/workflow.md](docs/workflow.md): step-by-step workflow for creating or improving instructions
+- [docs/general-prompting.md](docs/general-prompting.md): provider-neutral prompting method
+- [docs/video-prompting.md](docs/video-prompting.md): direct video-generation prompt guide
+- [docs/image-prompting.md](docs/image-prompting.md): direct image-generation and image-editing prompt guide
 - [docs/seedance-video-prompting.md](docs/seedance-video-prompting.md): Seedance-style video prompt logic
 - [docs/validation.md](docs/validation.md): how to test instructions before shipping them
 - [templates/system-instruction-template.md](templates/system-instruction-template.md): general-purpose system instruction template
 - [templates/json-output-agent-template.md](templates/json-output-agent-template.md): strict JSON agent template
+- [templates/general-prompt-system-instruction.md](templates/general-prompt-system-instruction.md): generalized prompt architect instruction
+- [templates/video-prompt-system-instruction.md](templates/video-prompt-system-instruction.md): video prompt system instruction
+- [templates/image-prompt-system-instruction.md](templates/image-prompt-system-instruction.md): image prompt system instruction
 - [templates/video-node-agent-template.md](templates/video-node-agent-template.md): video prompt/node agent template
 - [templates/variation-agent-template.md](templates/variation-agent-template.md): role-based variation agent template
 - [checklists/instruction-quality-checklist.md](checklists/instruction-quality-checklist.md): practical review checklist
@@ -80,3 +86,18 @@ git remote add origin https://github.com/<your-username>/antonify.git
 git push -u origin main
 ```
 
+## Professional Direction
+
+Antonify is built around one practical belief: a system instruction should behave like an operating brief for a skilled agent. It should define the job, the input, the rules, the output, and the validation path clearly enough that the model does not have to guess what "good" means.
+
+![Antonify system instruction architecture](assets/antonify-architecture.svg)
+
+Use Antonify when you want instructions that are:
+
+- clear enough for a model to follow consistently
+- strict enough for structured output
+- flexible enough for creative work
+- grounded enough to avoid invented claims
+- testable enough to improve over time
+
+The same architecture works for general agents, JSON agents, image prompt agents, video prompt agents, and role-specific variation agents.
