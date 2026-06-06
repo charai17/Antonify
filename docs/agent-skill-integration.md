@@ -204,7 +204,7 @@ Use the Antonify skill to audit this SKILL.md for unclear trigger behavior and m
 Create a role-specific variation agent for hooks. It must preserve claims and avoid inventing proof.
 ```
 
-The output should have a clear job, exact input contract, exact output contract, preservation rules, anti-invention rules, and validation checks.
+The output should have a clear job, draft input fields, an output schema or response pattern, preservation rules, anti-invention rules, validation checks, and two example outputs for review.
 
 ## Source Docs
 

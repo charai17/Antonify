@@ -110,16 +110,25 @@ See [docs/agent-skill-integration.md](docs/agent-skill-integration.md) for full 
 
 ## Quick Start
 
-1. Define the agent's job in one sentence.
-2. Write the exact input contract.
-3. Write the exact output contract.
-4. Add preservation rules.
-5. Add transformation rules.
-6. Add anti-invention rules.
-7. Add role-specific quality rules.
-8. Add a silent validation checklist.
-9. Add one valid example output.
-10. Test with 5 to 10 realistic inputs.
+Start with a plain-language request. Antonify should do the structure work for you.
+
+1. Tell Antonify what the agent should do.
+2. Antonify drafts the agent's job, input schema, and output shape.
+3. If the agent needs JSON, tables, or structured data, Antonify creates a strict output schema.
+4. If the agent is a system instruction or master prompt without a formal schema, Antonify creates a simple response pattern instead.
+5. Antonify adds preservation rules, transformation rules, quality rules, and a silent validation checklist.
+6. Antonify returns the finished instruction.
+7. Antonify also runs a quick test by showing two example outputs or two candidate output shapes.
+8. You reply with what feels wrong, missing, too strict, or too loose.
+9. Antonify revises the instruction and repeats the two-example test.
+
+Example request:
+
+```text
+Create a system instruction for an agent that turns messy client notes into a clear project brief.
+```
+
+Antonify should infer the input fields, propose the output shape, and show two sample results so you can react before the instruction is treated as finished.
 
 ## The Antonify Rule
 
@@ -129,7 +138,7 @@ If the instruction repeats itself, merge the duplicate rule.
 
 If the instruction says "make it good", replace that with visible, testable criteria.
 
-If the output shape matters, include a valid example.
+If the output shape matters, show two examples so the user can compare and react.
 
 ## Publishing
 

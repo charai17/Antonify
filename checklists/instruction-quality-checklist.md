@@ -6,9 +6,9 @@ Use this before shipping a system instruction.
 
 - [ ] The agent role is clear.
 - [ ] The job is one sentence.
-- [ ] The input contract is explicit.
+- [ ] The input fields or input schema are explicit.
 - [ ] Missing input behavior is defined.
-- [ ] The output contract is explicit.
+- [ ] The output schema or response pattern is explicit.
 
 ## Control
 
@@ -29,8 +29,8 @@ Use this before shipping a system instruction.
 
 - [ ] JSON rules are explicit if needed.
 - [ ] No markdown/prose rule is explicit if needed.
-- [ ] One valid example is included if exact shape matters.
-- [ ] The example does not contain impossible or unsupported content.
+- [ ] Two example outputs or output shapes are included for user review.
+- [ ] The examples do not contain impossible or unsupported content.
 
 ## Video Prompting
 
@@ -42,5 +42,6 @@ Use this before shipping a system instruction.
 ## Validation
 
 - [ ] The instruction includes a silent validation checklist.
+- [ ] The quick two-example test has been run.
 - [ ] It has been tested with normal, vague, missing-field, and high-risk inputs.
 - [ ] The output passes parser/schema checks.

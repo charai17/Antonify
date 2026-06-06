@@ -55,7 +55,8 @@ Example:
 ```text
 You receive:
 - the current instruction
-- the target output schema
+- draft input fields
+- target output schema or response pattern
 - optional examples of bad outputs
 - optional domain, style, or safety constraints
 ```
@@ -97,13 +98,14 @@ Return only valid JSON. Do not include markdown, prose, comments, or trailing co
 When improving an instruction, do this:
 
 1. Identify the job.
-2. Identify the output format.
-3. Remove duplicate rules.
-4. Resolve conflicts.
-5. Convert vague quality words into observable criteria.
-6. Add anti-invention rules.
-7. Add a validation checklist.
-8. Add one valid example if exact output matters.
+2. Draft the input fields.
+3. Identify whether the output needs a strict schema or a response pattern.
+4. Remove duplicate rules.
+5. Resolve conflicts.
+6. Convert vague quality words into observable criteria.
+7. Add anti-invention rules.
+8. Add a validation checklist.
+9. Add two example outputs or output shapes for user review.
 
 ## Common Failure Patterns
 
@@ -116,7 +118,7 @@ Make this prompt better.
 Fix:
 
 ```text
-Rewrite the prompt so it defines the role, job, input, rules, output format, and validation checklist.
+Rewrite the prompt so it defines the role, job, input fields, rules, output shape, and validation checklist.
 ```
 
 ### Too broad
@@ -160,7 +162,7 @@ Only use proof, statistics, reviews, testimonials, or trust signals if they are 
 ```text
 You are a [role].
 
-Your job is to [task] from [input] and output [deliverable].
+Your job is to [task] from [input] and produce [deliverable].
 
 # Input
 
@@ -178,8 +180,16 @@ You receive:
 
 # Output
 
-Return [format].
+Return [strict schema or response pattern].
 Do not include [forbidden output].
+
+# Automatic Test
+
+Show two example outputs:
+- Example A: normal realistic input and output
+- Example B: vague, missing-field, or edge-case input and output
+
+Ask what should change.
 
 # Validation Before Output
 

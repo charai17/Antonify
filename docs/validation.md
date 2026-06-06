@@ -2,9 +2,28 @@
 
 Instruction quality is proven by behavior, not by how complete the prompt looks.
 
+## Automatic Two-Example Test
+
+After Antonify creates or rewrites an instruction, run a lightweight test before treating it as final.
+
+Show the user:
+
+1. Example A: a normal realistic output
+2. Example B: a vague, missing-field, or edge-case output
+
+If the instruction has a strict output schema, both examples should be valid outputs that match that schema.
+
+If the instruction is a master prompt, system instruction, or conversational agent without a formal schema, both examples should show the proposed response pattern instead.
+
+Then ask:
+
+```text
+What should change: the input fields, the output shape, the tone, the strictness, or the examples?
+```
+
 ## Minimum Test Set
 
-Run every instruction through at least these cases:
+For final review, run every instruction through at least these cases:
 
 1. Clear normal input
 2. Vague input

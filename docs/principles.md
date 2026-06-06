@@ -10,9 +10,9 @@ You are a [role]. Your job is to [specific task] from [input] and output [delive
 
 Avoid combining unrelated jobs. A system instruction that asks one agent to plan, write, validate, debug, vary, publish, and explain will become inconsistent.
 
-## 2. Define The Input Contract
+## 2. Draft The Input Schema
 
-Say exactly what the model receives:
+Say exactly what the model receives. If the user did not provide fields, infer the smallest useful set:
 
 - fields
 - documents
@@ -23,9 +23,9 @@ Say exactly what the model receives:
 
 If a field may be missing, define what to do. Do not leave missing data behavior implicit.
 
-## 3. Define The Output Contract
+## 3. Define The Output Shape
 
-If the output must be structured, describe:
+If the output must be structured, describe a strict schema:
 
 - top-level keys
 - required fields
@@ -38,6 +38,12 @@ For JSON agents, say:
 
 ```text
 Output only valid JSON. Do not output markdown, prose, comments, or trailing commas.
+```
+
+If the instruction is a master prompt, system instruction, writing assistant, or conversational workflow, use a response pattern instead of a formal schema:
+
+```text
+Return a concise answer with a clear recommendation, the reasoning behind it, and any assumptions.
 ```
 
 ## 4. Separate Strategy From Renderable Output
@@ -137,13 +143,15 @@ Use a checklist like:
 - no invented references
 - final output matches the requested role
 
-## 10. Add One Valid Example
+## 10. Add Two Test Examples
 
-Examples improve compliance more than more rules.
+Examples improve compliance more than more rules. For the first user-facing draft, show two examples so the user can react.
 
-Use one compact example that:
+Use two compact examples:
 
 - is valid
 - follows all constraints
 - demonstrates quality
 - does not invite copying unsupported claims
+
+Use one normal example and one vague, missing-field, or edge-case example. Ask what should change before treating the instruction as final.

@@ -2,6 +2,8 @@
 
 Antonify turns a vague AI task into an operating brief the model can follow without guessing.
 
+Default experience: the user can describe the desired agent in plain language. Antonify drafts the input schema, output schema or response pattern, and two test outputs for review.
+
 ## Core Questions
 
 Every strong instruction answers:
@@ -11,7 +13,7 @@ Every strong instruction answers:
 - What output must it produce?
 - What should it preserve?
 - What may it change?
-- What must it never invent?
+- What should it avoid adding without support?
 - What does a good result look like?
 - How should it silently validate before answering?
 
@@ -20,14 +22,16 @@ Every strong instruction answers:
 Use this order for most system instructions:
 
 1. Role and job
-2. Input contract
-3. Output contract
+2. Draft input schema or input fields
+3. Output schema or response pattern
 4. Preservation rules
 5. Transformation rules
 6. Anti-invention rules
 7. Quality criteria
 8. Silent validation checklist
-9. Example output, if structure matters
+9. Two example outputs for user review
+
+Use `output schema` when software, automation, JSON, tables, or forms need predictable structure. Use `response pattern` when the agent is a master prompt, system instruction, writing assistant, or conversational workflow without a formal schema.
 
 ## Quality Rules
 
@@ -36,6 +40,7 @@ Use this order for most system instructions:
 - Keep the instruction short enough to follow, but complete enough to remove guessing.
 - Merge duplicate rules.
 - Include examples only when they clarify the output shape or decision boundary.
+- After creating an instruction, show two example outputs and ask the user what should change.
 
 ## JSON Agents
 

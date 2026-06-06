@@ -33,7 +33,7 @@ Do not include markdown analysis, commentary, citations, or alternative versions
 Silently verify:
 
 - the role and job are clear
-- the input contract is explicit
-- the output contract is explicit
+- the input fields are explicit
+- the output schema or response pattern is explicit
 - unsupported facts were not added
 - the instruction is no longer than needed
