@@ -2,7 +2,7 @@
 
 This guide turns a rough video idea into a production-ready video-generation prompt.
 
-Use it when writing system instructions for agents that create `promptText`, `modelReadyPrompt`, video nodes, ad scenes, social clips, product demos, or cinematic sequences.
+Use it when writing system instructions for agents that create `promptText`, `finalPrompt`, social clips, product demos, training clips, cinematic sequences, or other video-generation prompts.
 
 ## Video Prompt Goal
 
@@ -37,14 +37,14 @@ Use this order:
 Start with a compact capsule when useful:
 
 ```text
-9:16 vertical ad, 24fps, 6 seconds, clean commercial product lighting.
+9:16 vertical short-form video, 24fps, 6 seconds, clean product lighting.
 ```
 
 Examples:
 
 ```text
 16:9 cinematic product demo, natural daylight, handheld documentary feel.
-9:16 UGC-style social ad, phone-camera realism, warm indoor lighting.
+9:16 UGC-style social video, phone-camera realism, warm indoor lighting.
 9:16 vertical product demo, crisp screen-recording and hand close-up style.
 2.35:1 cinematic widescreen, 24fps, moody low-key lighting, slow controlled camera.
 ```
@@ -110,7 +110,7 @@ Use concrete camera terms:
 - match cut
 - seamless one-take movement
 
-## Product And Advertising Moves
+## Subject, Product, And Scene Moves
 
 Use these when they fit the brief:
 
@@ -181,7 +181,6 @@ Do not use abstract marketing instructions as render instructions:
 - build trust
 - increase urgency
 - make viewers care
-- show high conversion
 - create emotional resonance
 
 Translate strategy into visible or audible details.
@@ -195,6 +194,5 @@ Translate strategy into visible or audible details.
 ## Example
 
 ```text
-9:16 vertical commercial ad, 24fps, 7 seconds, clean product demo lighting. A compact desk organizer is placed at the center of a cluttered home office desk. The person slides pens, sticky notes, and cable clips into separate compartments, clearing the space around the laptop. Natural daylight, practical home office setting, smooth overhead camera move into a medium product close-up, soft focus pull from scattered items to the organizer. Subtle sounds of items being placed into compartments. No captions, no logos, no watermarks, no extra text.
+9:16 vertical product demo, 24fps, 7 seconds, clean practical lighting. A compact desk organizer is placed at the center of a cluttered home office desk. The person slides pens, sticky notes, and cable clips into separate compartments, clearing the space around the laptop. Natural daylight, practical home office setting, smooth overhead camera move into a medium product close-up, soft focus pull from scattered items to the organizer. Subtle sounds of items being placed into compartments. No captions, no logos, no watermarks, no extra text.
 ```
-

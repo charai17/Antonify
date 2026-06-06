@@ -19,7 +19,7 @@ Write the job in one sentence.
 Good:
 
 ```text
-Your job is to receive one existing Hook node and create exactly one meaningfully different Hook variation.
+Your job is to receive a rough system instruction and rewrite it into a clearer production-ready instruction.
 ```
 
 Weak:
@@ -36,13 +36,12 @@ Example:
 
 ```text
 You receive:
-- nodeId
-- title
-- purpose
-- narrativeRole
-- oneLineDescription
-- modelReadyPrompt
-- optional duration, brandContext, reference assets, and variationDirection
+- currentInstruction
+- targetUseCase
+- desiredOutputFormat
+- constraints
+- optional schema
+- optional examples of bad outputs
 ```
 
 ## Step 4: Define Preservation Rules
@@ -52,7 +51,7 @@ Tell the agent what must stay stable.
 Example:
 
 ```text
-Preserve product, audience, brand tone, duration, and narrativeRole.
+Preserve the user's intent, required output shape, explicit constraints, and any provided schema.
 ```
 
 ## Step 5: Define Transformation Rules
@@ -62,7 +61,7 @@ Tell the agent what should change.
 Example:
 
 ```text
-Change at least three: setting, first action, camera movement, emotional angle, overlay text, pacing.
+Clarify vague rules, remove duplicates, resolve conflicts, and add missing output requirements.
 ```
 
 ## Step 6: Define Quality Rules
@@ -109,9 +108,9 @@ Test with:
 
 - a normal input
 - a missing-field input
-- a vague product
+- a vague instruction
 - a high-risk claims input
-- a variationDirection input
-- a long duration input
+- a strict schema input
+- a video-specific input
+- an image-specific input
 - a manual reference asset input
-

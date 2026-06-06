@@ -53,32 +53,43 @@ promptText must describe only what should be visible or audible.
 
 ## 5. Preserve What Must Not Change
 
-Variation agents need explicit preservation rules.
+Any editing or generation agent needs explicit preservation rules.
 
 Preserve:
 
-- product or offer
-- audience
-- brand tone
-- duration
+- user intent
+- required fields
 - output schema
-- narrative role
 - factual claims from the input
+- reference assets
+- domain constraints
+- safety constraints
+- style constraints
+- duration, aspect ratio, or media format when relevant
 
-## 6. Require Meaningful Difference
+## 6. Define Transformation Scope
 
-For variation work, "rewrite this" is too weak.
+When the agent must improve or transform something, "rewrite this" is too weak.
 
-Require changes across dimensions such as:
+Define what may change:
 
+- wording
+- structure
+- missing rules
+- conflicting rules
+- level of detail
 - visual setup
-- setting
 - camera movement
-- emotional angle
+- composition
+- lighting
 - pacing
-- overlay text
-- proof format
-- action sequence
+
+Define what must not change:
+
+- output schema
+- user's core intent
+- unsupported facts
+- provided references
 
 ## 7. Ban Unsupported Claims
 
@@ -103,13 +114,13 @@ When proof is missing, use visible demonstration instead of fabricated evidence.
 Weak:
 
 ```text
-Make it viral and premium.
+Make it strong and cinematic.
 ```
 
 Better:
 
 ```text
-Use a fast handheld close-up, immediate product reveal, clean studio lighting, and short overlay text.
+Use a slow push-in from a wide shot to a close-up, soft side lighting, and a quiet focused mood.
 ```
 
 ## 9. Add A Silent Validation Checklist
@@ -136,4 +147,3 @@ Use one compact example that:
 - follows all constraints
 - demonstrates quality
 - does not invite copying unsupported claims
-

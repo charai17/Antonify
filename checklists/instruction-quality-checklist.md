@@ -36,7 +36,7 @@ Use this before shipping a system instruction.
 
 - [ ] Video prompts describe visible or audible output.
 - [ ] Prompt includes subject/product, action, setting, camera, lighting, style.
-- [ ] Abstract marketing terms are translated into visual cues.
+- [ ] Abstract quality terms are translated into visual cues.
 - [ ] Negative constraints are included when useful.
 
 ## Validation
@@ -44,4 +44,3 @@ Use this before shipping a system instruction.
 - [ ] The instruction includes a silent validation checklist.
 - [ ] It has been tested with normal, vague, missing-field, and high-risk inputs.
 - [ ] The output passes parser/schema checks.
-

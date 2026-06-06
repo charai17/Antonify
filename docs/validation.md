@@ -12,10 +12,10 @@ Run every instruction through at least these cases:
 4. Missing required field
 5. Unsupported proof request
 6. Manual reference asset present
-7. Variation direction present
+7. Strict output schema present
 8. High-risk claims domain
-9. Very short duration
-10. Long duration or multi-segment duration
+9. Video-specific constraints present
+10. Image-specific constraints present
 
 ## JSON Agent Checks
 
@@ -61,7 +61,6 @@ Check that the output does not invent:
 - discounts
 - medical/legal/financial claims
 
-## Variation Checks
+## Transformation Checks
 
-Check that a variation changes at least three meaningful dimensions and is not a paraphrase.
-
+When the instruction asks for rewriting or transformation, check that the output meaningfully improves the original instead of paraphrasing it.

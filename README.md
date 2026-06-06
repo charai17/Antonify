@@ -10,9 +10,9 @@ The goal is simple: turn messy intent into instructions that give an AI model cl
 
 - System instructions for JSON-output agents
 - Workflow agents with role-specific behavior
+- General instruction editors and prompt architects
 - Video-generation prompt agents
-- Short-form ad blueprint agents
-- Variation agents for Hooks, Problems, Demos, Proof, Social Proof, Transformations, Objections, and CTAs
+- Image-generation and image-editing prompt agents
 - Validation checklists for testing whether an instruction actually works
 
 ## Core Idea
@@ -42,11 +42,10 @@ Good system instructions are not long because they are fancy. They are complete 
 - [templates/general-prompt-system-instruction.md](templates/general-prompt-system-instruction.md): generalized prompt architect instruction
 - [templates/video-prompt-system-instruction.md](templates/video-prompt-system-instruction.md): video prompt system instruction
 - [templates/image-prompt-system-instruction.md](templates/image-prompt-system-instruction.md): image prompt system instruction
-- [templates/video-node-agent-template.md](templates/video-node-agent-template.md): video prompt/node agent template
-- [templates/variation-agent-template.md](templates/variation-agent-template.md): role-based variation agent template
 - [checklists/instruction-quality-checklist.md](checklists/instruction-quality-checklist.md): practical review checklist
-- [examples/ad-blueprint-agent.md](examples/ad-blueprint-agent.md): compact ad blueprint agent example
-- [examples/variation-agent-hook.md](examples/variation-agent-hook.md): Hook variation agent example
+- [examples/system-instruction-editor.md](examples/system-instruction-editor.md): general instruction editing example
+- [examples/video-prompt-agent.md](examples/video-prompt-agent.md): video prompt agent example
+- [examples/image-prompt-agent.md](examples/image-prompt-agent.md): image prompt agent example
 
 ## Quick Start
 
@@ -102,4 +101,4 @@ Use Antonify when you want instructions that are:
 - grounded enough to avoid invented claims
 - testable enough to improve over time
 
-The same architecture works for general agents, JSON agents, image prompt agents, video prompt agents, and role-specific variation agents.
+The same architecture works for general agents, JSON agents, image prompt agents, and video prompt agents.

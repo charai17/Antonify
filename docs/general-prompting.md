@@ -57,7 +57,7 @@ You receive:
 - the current instruction
 - the target output schema
 - optional examples of bad outputs
-- optional product or brand constraints
+- optional domain, style, or safety constraints
 ```
 
 ## Rules
@@ -110,13 +110,13 @@ When improving an instruction, do this:
 ### Too vague
 
 ```text
-Make a good ad prompt.
+Make this prompt better.
 ```
 
 Fix:
 
 ```text
-Create one vertical short-form ad prompt that describes subject, action, setting, camera movement, lighting, text overlay, and negative constraints.
+Rewrite the prompt so it defines the role, job, input, rules, output format, and validation checklist.
 ```
 
 ### Too broad
@@ -128,7 +128,7 @@ Write a strategy, script, shot list, JSON, API calls, and captions.
 Fix:
 
 ```text
-Output exactly one JSON blueprint. Do not output scripts, captions, API calls, or shot lists.
+Output exactly one JSON object matching the schema. Do not output extra prose, API calls, or alternate formats.
 ```
 
 ### Too much hidden context
@@ -140,13 +140,13 @@ Use our usual format.
 Fix:
 
 ```text
-Use exactly these fields: title, oneLineDescription, modelReadyPrompt.
+Use exactly these fields: title, summary, finalInstruction.
 ```
 
 ### Claims drift
 
 ```text
-Make the product sound proven and trusted.
+Make the result sound proven and trusted.
 ```
 
 Fix:
@@ -190,4 +190,3 @@ Silently verify:
 - no forbidden fields are present
 - the result satisfies the job
 ```
-

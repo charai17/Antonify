@@ -4,7 +4,7 @@ Seedance-style prompts work best when they describe what can be seen or heard, n
 
 ## Prompt Shape
 
-Use this order for video prompt fields such as `modelReadyPrompt` or `promptText`:
+Use this order for video prompt fields such as `finalPrompt` or `promptText`:
 
 1. Technical/style capsule
 2. Main subject or product
@@ -20,14 +20,14 @@ Use this order for video prompt fields such as `modelReadyPrompt` or `promptText
 Use a compact opening when useful:
 
 ```text
-9:16 vertical ad, 24fps, 6 seconds, clean commercial product lighting.
+9:16 vertical short-form video, 24fps, 6 seconds, clean product lighting.
 ```
 
 Other examples:
 
 ```text
 16:9 cinematic product demo, natural daylight, handheld documentary feel.
-9:16 UGC-style social ad, phone-camera realism, warm indoor lighting.
+9:16 UGC-style social video, phone-camera realism, warm indoor lighting.
 9:16 vertical product demo, crisp screen-recording and hand close-up style.
 ```
 
@@ -60,7 +60,7 @@ Use concrete camera terms:
 - match cut
 - seamless one-take movement
 
-## Product And Ad Actions
+## Subject And Action Moves
 
 Use only when appropriate:
 
@@ -106,7 +106,6 @@ No fake numbers, no fake reviews, no fake logos, no watermarks.
 Avoid abstract instructions without visual details:
 
 - make it viral
-- make it high-converting
 - build trust
 - increase urgency
 - make viewers care
@@ -114,4 +113,3 @@ Avoid abstract instructions without visual details:
 - create emotional resonance
 
 Translate those into visible or audible elements.
-

@@ -2,7 +2,7 @@
 
 This guide turns a rough visual idea into a production-ready image-generation prompt.
 
-Use it when writing system instructions for agents that create product images, ad stills, reference frames, thumbnails, hero images, style frames, concept art, or image-editing prompts.
+Use it when writing system instructions for agents that create product images, reference frames, thumbnails, hero images, style frames, concept art, or image-editing prompts.
 
 ## Image Prompt Goal
 
@@ -44,7 +44,7 @@ Square product hero image, studio photography style.
 Examples:
 
 ```text
-Vertical social ad still, realistic lifestyle photography.
+Vertical social image, realistic lifestyle photography.
 Wide website hero image, clean commercial product photography.
 Transparent-background product cutout, sharp edges, even studio lighting.
 Editorial concept art, cinematic lighting, detailed environment.
@@ -187,4 +187,3 @@ No extra text, no watermark, no distorted hands, no fake logos, no duplicate pro
 ```text
 Square product hero image, realistic studio photography. A compact matte black desk organizer with three pen compartments, a cable slot, and a shallow tray for sticky notes. Centered three-quarter view on a clean walnut desk, laptop blurred softly in the background. Soft diffused studio lighting, crisp product highlights, subtle shadow under the organizer. Minimal modern workspace mood, neutral gray and warm wood color palette. No text, no fake logos, no watermark, no distorted edges.
 ```
-
