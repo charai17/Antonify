@@ -27,7 +27,6 @@ Good system instructions are not long because they are fancy. They are complete 
 - What output must I produce?
 - What should I preserve?
 - What may I change?
-- What must I never invent?
 - What does a good result look like?
 - How do I silently validate before answering?
 
